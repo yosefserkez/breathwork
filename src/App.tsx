@@ -212,9 +212,11 @@ function App() {
         </div>
         
           {/* Current Pattern Display */}
+          {showPatternSelector && (
         <div className="mb-6">
-          <CurrentPatternDisplay pattern={settings.pattern} />
-        </div>
+            <CurrentPatternDisplay pattern={settings.pattern} />
+          </div>
+          )}
 
         {/* Favorite Patterns */}
         {/* {!isActive && (
