@@ -258,7 +258,7 @@ function App() {
       
       {/* Footer */}
       <footer className="py-4 px-6 text-center text-sm text-gray-500 dark:text-gray-400">
-        <p>BreathFlow &copy; 2025 - Guided breathwork for wellbeing</p>
+        <p>BreathFlow <a href="https://yosefserkez.com" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:text-purple-600 italic">by Yo</a> 2025 - Guided breathwork for wellbeing</p>
       </footer>
       
       {/* Modals */}

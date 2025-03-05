@@ -36,14 +36,21 @@ const CurrentPatternDisplay: React.FC<CurrentPatternDisplayProps> = ({
             </span>
           </div>
           
-          <p className="text-gray-600 dark:text-gray-400 mb-3">
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
             {pattern.description}
           </p>
           
           {pattern.instructions && (
             <div className="mb-4">
               <p className="font-medium mb-1 text-purple-900 dark:text-purple-200">Instructions:</p>
-              <p className="text-gray-700 dark:text-gray-300 text-sm">{pattern.instructions}</p>
+              <p className="text-gray-700 dark:text-gray-300 mt-2 leading-4">
+                {pattern.instructions?.split('. ').map((sentence, index, array) => (
+                  <React.Fragment key={index}>
+                    {index > 0 && <br />}
+                    <span className="font-medium text-purple-600 dark:text-purple-400">{index + 1}. </span>{sentence}{index < array.length - 1 ? '.' : ''}<br />
+                  </React.Fragment>
+                ))}
+              </p>
             </div>
           )}
           

@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = ({ onInfoClick }) => {
     <header className="w-full py-4 px-6 flex justify-between items-center bg-white dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-80 backdrop-blur-sm shadow-sm">
       <div className="flex items-center">
         <Wind className="w-8 h-8 text-purple-600 dark:text-purple-400 mr-2" />
-        <h1 className="text-2xl font-bold text-purple-900 dark:text-purple-300">BreathFlow</h1>
+        <h1 className="text-2xl font-bold text-purple-900 dark:text-purple-300">BreathFlow <span className="text-sm opacity-50 italic">by Yo</span></h1>
       </div>
       
       <div className="flex items-center space-x-3">
