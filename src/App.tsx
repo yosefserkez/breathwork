@@ -33,9 +33,10 @@ function App() {
   
   // Initialize settings from localStorage if available
   const [settings, setSettings] = useState<BreathSettings>(() => {
+    const defaultPattern = breathPatterns[0]; // Default to first pattern
     const defaultSettings: BreathSettings = {
-      pattern: breathPatterns[0], // Default to first pattern
-      cycles: 5,
+      pattern: defaultPattern,
+      cycles: defaultPattern.defaultCycles || 5, // Use default cycles from pattern
       guidanceVolume: 0.7,
       backgroundVolume: 1,
       useVoiceGuidance: false,
@@ -54,6 +55,11 @@ function App() {
         if (savedSettings.pattern) {
           const matchingPattern = breathPatterns.find(p => p.id === savedSettings.pattern.id);
           savedSettings.pattern = matchingPattern || savedSettings.pattern;
+          
+          // If using a matched pattern, also use its default cycles unless cycles were explicitly saved
+          if (matchingPattern && !savedSettings.hasOwnProperty('cycles')) {
+            savedSettings.cycles = matchingPattern.defaultCycles || defaultSettings.cycles;
+          }
         }
         
         return {...defaultSettings, ...savedSettings};
@@ -115,7 +121,14 @@ function App() {
 
   // Handle pattern selection
   const handleSelectPattern = (pattern: BreathPattern) => {
-    setSettings({ ...settings, pattern });
+    // Update settings with the selected pattern and its default cycles
+    setSettings({ 
+      ...settings, 
+      pattern, 
+      // Use the pattern's default cycles if available, otherwise keep current cycles
+      cycles: pattern.defaultCycles || settings.cycles 
+    });
+    
     // Save selected pattern to localStorage
     localStorage.setItem('breathflow-selected-pattern', JSON.stringify(pattern));
   };

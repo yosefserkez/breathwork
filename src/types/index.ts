@@ -10,6 +10,7 @@ export interface BreathPattern {
   difficulty?: 'beginner' | 'intermediate' | 'advanced' | 'any';
   category?: string;
   instructions?: string;
+  defaultCycles?: number;
 }
 
 export type BreathPhase = 'inhale' | 'hold1' | 'exhale' | 'hold2';

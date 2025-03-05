@@ -12,6 +12,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Stress reduction', 'Mental clarity', 'Focus improvement'],
     difficulty: 'beginner',
     category: 'Focus',
+    defaultCycles: 8,
     instructions: 'Sit in a comfortable position. Inhale through your nose for 4 seconds, filling your lungs. Hold your breath for 4 seconds. Exhale completely through your mouth for 4 seconds. Hold your lungs empty for 4 seconds. Repeat the cycle.',
   },
   {
@@ -25,6 +26,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Anxiety relief', 'Better sleep', 'Stress management'],
     difficulty: 'beginner',
     category: 'Relaxation',
+    defaultCycles: 6,
     instructions: 'Sit with your back straight. Place the tip of your tongue against the ridge behind your upper front teeth. Exhale completely through your mouth. Close your mouth and inhale through your nose for 4 seconds. Hold your breath for 7 seconds. Exhale completely through your mouth for 8 seconds, making a whoosh sound.',
   },
   {
@@ -38,6 +40,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Heart rate regulation', 'Autonomic balance', 'Concentration'],
     difficulty: 'beginner',
     category: 'Balance',
+    defaultCycles: 11,
     instructions: 'Sit comfortably with a straight spine. Breathe gently and smoothly through your nose, making your inhales and exhales equal in length (about 5.5 seconds each). Focus on the smooth transition between inhale and exhale without pausing. Aim for about 5-6 breaths per minute.',
   },
   {
@@ -51,6 +54,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Energy boost', 'Immune system support', 'Mental resilience'],
     difficulty: 'intermediate',
     category: 'Energizing',
+    defaultCycles: 30,
     instructions: 'Sit in a comfortable position. Take 30-40 deep breaths, inhaling through the nose and exhaling through the mouth. Make your inhales full but not forced, and let your exhales be relaxed and unforced. After the last exhale, hold your breath as long as comfortable. Take one deep recovery breath and hold for 15 seconds. Repeat for 3-4 rounds.',
   },
   {
@@ -64,6 +68,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Deep relaxation', 'Anxiety reduction', 'Better sleep'],
     difficulty: 'beginner',
     category: 'Relaxation',
+    defaultCycles: 10,
     instructions: 'Find a comfortable seated position. Breathe in through your nose for 4 seconds, filling your lungs from bottom to top. Hold briefly for 2 seconds. Exhale slowly through your mouth for 6 seconds, making your exhale longer than your inhale. Focus on completely emptying your lungs. Repeat for 5-10 minutes.',
   },
   {
@@ -78,6 +83,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Mental balance', 'Concentration', 'Stress reduction'],
     difficulty: 'intermediate',
     category: 'Balance',
+    defaultCycles: 10,
   },
   {
     id: 'ujjayi',
@@ -90,6 +96,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Focus', 'Endurance', 'Mindfulness'],
     difficulty: 'intermediate',
     category: 'Focus',
+    defaultCycles: 12,
     instructions: 'Sit with a straight spine. Close your mouth and breathe through your nose. Slightly constrict the back of your throat as you breathe, creating a soft ocean-like sound. Inhale deeply for 5 seconds, feeling your chest and abdomen expand. Exhale completely for 5 seconds, maintaining the same gentle throat constriction. Keep your breath smooth and controlled throughout.',
   },
   {
@@ -103,6 +110,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Reduced stress', 'Lower blood pressure', 'Improved core stability'],
     difficulty: 'beginner',
     category: 'Relaxation',
+    defaultCycles: 12,
     instructions: 'Lie on your back with knees bent or sit comfortably. Place one hand on your chest and the other on your abdomen. Breathe in slowly through your nose for 4 seconds, feeling your abdomen rise while your chest remains relatively still. Exhale slowly through pursed lips for 6 seconds, feeling your abdomen fall. Focus on the movement of your diaphragm throughout.',
   },
   {
@@ -116,6 +124,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Cooling effect', 'Reduces anxiety', 'Lowers blood pressure'],
     difficulty: 'intermediate',
     category: 'Cooling',
+    defaultCycles: 12,
     instructions: 'Sit comfortably with a straight spine. Curl your tongue into a tube shape (if you cannot curl your tongue, slightly part your lips instead). Inhale through your curled tongue or parted lips for 4 seconds, feeling the cool air. Close your mouth and exhale through your nose for 6 seconds. Repeat for 5-10 cycles.',
   },
   {
@@ -129,6 +138,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Increased energy', 'Mental clarity', 'Detoxification'],
     difficulty: 'advanced',
     category: 'Energizing',
+    defaultCycles: 60,
     instructions: 'Sit comfortably with a straight spine. Take a deep breath in, then exhale forcefully through the nose by contracting your abdominal muscles quickly. Allow the inhalation to happen passively as the abdomen relaxes. Focus on quick, forceful exhalations (about 1 per second) while inhalations happen automatically. Start with 20 breaths per round, then gradually increase. Perform 3 rounds with normal breathing in between.',
   },
   {
@@ -142,6 +152,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Anxiety relief', 'Reduced blood pressure', 'Improved concentration'],
     difficulty: 'beginner',
     category: 'Relaxation',
+    defaultCycles: 12,
     instructions: 'Sit comfortably with eyes closed. Place your index fingers on your ears, covering the cartilage (not the ear canal). Inhale deeply through your nose for 4 seconds. Exhale slowly through your nose for 6 seconds while making a humming sound like a bee. Feel the vibration throughout your head. Repeat for 5-10 cycles.',
   },
   {
@@ -155,6 +166,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Balances nervous system', 'Improves respiratory function', 'Enhances focus'],
     difficulty: 'intermediate',
     category: 'Balance',
+    defaultCycles: 8,
     instructions: 'Sit comfortably with a straight spine. Use your right thumb to close your right nostril. Inhale through your left nostril for 4 seconds. Hold both nostrils closed for 4 seconds. Release your right nostril and exhale for 4 seconds. Inhale through your right nostril for 4 seconds. Hold both nostrils closed for 4 seconds. Release your left nostril and exhale for 4 seconds. This completes one cycle. Repeat for 5-10 minutes.',
   },
   {
@@ -168,6 +180,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Improved focus', 'Stress reduction', 'Better sleep'],
     difficulty: 'beginner',
     category: 'Mindfulness',
+    defaultCycles: 12,
     instructions: 'Sit comfortably with eyes closed. Breathe naturally. After an exhale, count "one" silently. After the next exhale, count "two," and so on up to "five." Then start again at "one." If you lose track, simply return to "one." Focus on the sensation of breathing and the counting. Practice for 5-10 minutes.',
   },
   {
@@ -181,6 +194,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Increased energy', 'Improved digestion', 'Enhanced mental clarity'],
     difficulty: 'advanced',
     category: 'Energizing',
+    defaultCycles: 60,
     instructions: 'Sit in a comfortable position with a straight spine. Begin with equal, rapid breathing through the nose (about 2-3 breaths per second). Actively pull in your navel toward your spine on each exhale, allowing inhales to happen passively. Keep your upper body relaxed. Start with 30 seconds and gradually build up to 3-5 minutes. Stop if you feel lightheaded.',
   },
   {
@@ -194,6 +208,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Improved HRV', 'Reduced anxiety', 'Better emotional regulation'],
     difficulty: 'beginner',
     category: 'Balance',
+    defaultCycles: 11,
     instructions: 'Sit or lie comfortably. Breathe in and out through your nose at a rate of about 5-6 breaths per minute (inhale for 5.5 seconds, exhale for 5.5 seconds). Focus on making your breathing smooth and continuous, with no pauses between inhale and exhale. Place a hand on your abdomen to ensure deep breathing. Practice for 10-20 minutes daily.',
   },
   {
@@ -207,6 +222,7 @@ export const breathPatterns: BreathPattern[] = [
     benefits: ['Improved asthma symptoms', 'Better sleep', 'Increased energy'],
     difficulty: 'intermediate',
     category: 'Therapeutic',
+    defaultCycles: 12,
     instructions: 'Sit comfortably with a straight back. Take a small breath in through your nose for 2 seconds. Exhale gently through your nose for 3 seconds. After exhaling, hold your breath (with empty lungs) for 5 seconds. Resume with a small inhale. Focus on keeping breathing light and relaxed. Practice for 10-15 minutes, gradually increasing the exhale hold time as comfortable.',
   },
 ];

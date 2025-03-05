@@ -71,19 +71,18 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({
             <span className="text-sm text-purple-600 dark:text-purple-400 font-medium">{settings.cycles}</span>
           </div>
           <input
-            type="range"
+            type="number"
             id="cycles"
             min="1"
-            max="20"
+            max="1000"
             step="1"
             value={settings.cycles}
             onChange={handleCyclesChange}
-            className="custom-slider dark:bg-purple-900"
+            className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200"
           />
           <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mt-1">
-            <span>1</span>
-            <span>10</span>
-            <span>20</span>
+            <span>Min: 1</span>
+            <span>Max: 1000</span>
           </div>
         </div>
         
